@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +9,20 @@
         div {
             width: 300px;
             height: 300px;
-            border: 2px solid black;
+            border: 10px solid black;
+            padding: 30px;
         }
         .box1 {
-            float: left;
+            box-sizing: border-box;
         }
         .box2 {
-            float: left;
-        }
-        .box3 {
-            float: right;
+            box-sizing: content-box; 
+            /* 기본값과 동일 */
         }
     </style>
 </head>
 <body>
     <div class="box1">01</div>
     <div class="box2">02</div>
-    <div class="box3">03</div>
 </body>
 </html>
