@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header {
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            box-sizing: border-box;
+            /* 1000px 안에 딱 맞게 들어가게 하기 위해서 */
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            height: 100%;
+            width: 200px;
+            text-align: center;
+            line-height: 100px;
+            /* line-height 100px은 위에 있는 header height에서 나온 거임 높이 똑같이 맞춰 주기 */
+            background-color: yellow;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: rgb(255, 237, 240);
+        }
+
+        .header-nav-inner {
+            display: flex;
+            background-color: yellow;
+        }
+
+        .header-nav-inner:last-child {
+            background-color: orange;
+        }
+
+        .header-nav-inner > li {
+            padding: 4px 8px;
+        }
+
+        main {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            gap: 16px;
+            /* margin으로 하면 자식 두 개가 딱 붙은 모양으로 돼서 gap으로 주는 게 나음 */
+        }
+
+        section {
+            width: 70%;
+        }
+
+        article {
+            border: 1px solid black;
+            margin-bottom: 16px;
+            padding: 16px;
+        }
+
+        article > h2 {
+            border-color: antiquewhite;
+            margin-bottom: 8px;
+        }
+
+        .article-text {
+            line-height: 150%;
+        }
+
+        aside {
+            border: 1px solid black;
+            padding: 16px;
+            width: 30%;
+            height: fit-content;
+        }
+
+        .aside-footer {
+            background-color: gray;
+            height: 80px;
+        }
+
+        aside > p {
+            margin-bottom: 8px;
+        }
+
+        .aside-input-container {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid black;
+            padding: 16px;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WEB-logo</h1>
+        <nav>
+            <ul class="header-nav-inner">
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+            </ul>
+            <ul class="header-nav-inner">
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Main Article</h2>
+                <p class="article-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus suscipit, laboriosam enim labore repudiandae necessitatibus delectus officiis aliquid commodi aperiam laborum facere ad ut, earum esse tempora beatae omnis!
+                </p>
+            </article>
+            <article>
+                <h2>Main Article</h2>
+                <p class="article-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus suscipit, laboriosam enim labore repudiandae necessitatibus delectus officiis aliquid commodi aperiam laborum facere ad ut, earum esse tempora beatae omnis!
+                </p>
+            </article>
+            <article>
+                <h2>Main Article</h2>
+                <p class="article-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus suscipit, laboriosam enim labore repudiandae necessitatibus delectus officiis aliquid commodi aperiam laborum facere ad ut, earum esse tempora beatae omnis!
+                </p>
+            </article>
+        </section>
+        <aside>
+            <h2>Right aside</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, voluptatibus asperiores? Laboriosam explicabo maiores quisquam est repudiandae, ut dolorum animi at provident eum possimus, quod sunt corrupti consequuntur, exercitationem adipisci?
+            </p>
+            <div class="aside-input-container">
+                <input type="text" name="" id="">
+                <button>mainto</button>
+            </div>
+            <div class="aside-footer">
+                <h3>TEXT</h3>
+                <p>banner</p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>HTML5 COPYRIGHT</p>
+    </footer>
+</body>
+</html>
+
+<!-- 책과는 다른 결과물 선생님 거 보고 따라 씀 -->
+<!-- 구조 먼저 잡고 css 입히기, class로 최대한 세분화하기 웬만하면 태그에 스타일 입히지 않기 -->
+<!-- 여백은 같은 방향으로 ex. 위에서 아래 여백 -->
+<!-- 중간에서 위랑 아래 여백 둘 다 넣으면 나중에 복잡해짐 -->
+
+<!-- 
+    1. html 구조
+    2. html 내용
+    3. reset.css 연결
+    4. css 작성 
+-->
